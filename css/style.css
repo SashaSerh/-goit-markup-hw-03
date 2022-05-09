@@ -1,4 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+box-sizing: inherit;
 
+}
 :root{
     /* =============clor============ */
     --accent-color:#2196F3;
@@ -27,14 +35,17 @@
 
 .hero{
     text-align: center;
+    /* height: 600px; */
+
 }
 
 /* Решта коду */
 /* * ----------селектор * для встановлення на всі єлеемнти */ 
 body {
+    margin: 0;
     font-family: var(--main-font), sans-serif;
-   
     background-color: var(--backgraund-color-body);
+    
 }
     /* для центрування і обмеження контенту по ширині. */
     h1,
@@ -48,15 +59,83 @@ body {
 margin: 0%
 
     }
+    .card-border {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        /* border-top: 1px solid #ECECEC; */
+
+        border-right: 1px solid #ECECEC;
+        border-bottom: 1px solid #ECECEC;
+        border-left: 1px solid #ECECEC;
+
+        
+    }
+.card-border > h3,
+.card-border > p{
+    text-decoration: none;
+    text-indent: 24px;
+    text-align: left;
+}
+
+
+.card-set{
+
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  margin-left: -20px;
+  
+
+    }
+
+
+.card-set > .item{
+
+flex-basis: calc(100% / 3 - 20px);
+margin-left: 20px;
+margin-top: 20px;
+border: 2px;
+
+
+}
+
     img {
         display: block;
         max-width: 100%;
         height: auto;
     }
+ 
     .container {
+    width: 1200px;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
+    margin-left: auto;
+    margin-right: auto;
     }
+.header-container{
+    display: flex;
+    align-items: center ;
+    width: 1200px;
 
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.navigation {
+    display: flex;
+    align-items: center;
+
+}
     /* для центрування і обмеження контенту по ширині. */
   
 .visually-hidden {
@@ -71,55 +150,121 @@ margin: 0%
     clip-path: inset(50%);
     margin: -1px;
 }
+
+.button{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    }
+.btn-secondary{
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
 .bg-color{
- /* color: #188CE8; */
     background-color: var(--section-bg);
 }
+
 .list{
-list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
 }
-.link{
-    text-decoration: none;
+.list-portfolio {
+    display: flex;
+    align-items:flex-start;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
 }
-.main-header{}
+
+.list-adress{
+    list-style: none;
+    padding:  0 ;
+}
+
+.contact:last-child{
+    margin-right: 0;
+}
 
 
- .button{
-    margin: 0;
-    padding: 0%;
-    background: transparent;
-    border: none;
-    line-height: 0;
- } 
 /* ==========================header========================= */
 .logo{
-font-family: var(--sekondary-font), sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-color: var(--primary-text-color);
- /* рамочка для обнар. маржина */
-outline: 2px solid tomato;
-/* рамочка для обнар. маржина */
-letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 95px;
+    font-family: var(--sekondary-font), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
 
-color: var(--main-text-color-b);
+ /* рамочка для обнар. маржина */
+    /* outline: 2px solid tomato; */
+/* рамочка для обнар. маржина */
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color-b);
 }
+
+.logo-footer {
+    margin-right: 1025px;
+    margin-bottom: 20px;
+   
+    font-family: var(--sekondary-font), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color-b);
+}
+.main-header{
+
+    border-bottom: 1px solid #ECECEC;
+}
+
+
 .logo-color{
 color: var(--accent-color);
 }
 
+.contact{
+    
+}
+.menu{
+    
+}
 
-.menu {}
+.menu-item:last-child{
+    margin: 0;
+}
+.menu-item {
+    margin-right: 52px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-.menu-item {}
+.link {
+    display: block;
+    text-decoration: none;
+}
+
 
 .menu-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+  
     color: var(--main-text-color-b);
 }
 
@@ -143,6 +288,12 @@ color: var(--accent-color);
 .mail-link-header:focus {
     color: var(--accent-color);
 }
+.contact{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 52px;
+   
+}
 
 .contact-number-header {
     font-style: normal;
@@ -163,12 +314,18 @@ color: var(--accent-color);
 
 /* ========================hero====================== */
 .table-h1{
+
+    margin-right: auto;
+    margin-bottom: 73px;
+    margin-left: auto;
+    
+    text-transform: uppercase;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 text-align: center;
 color: var(--main-text-color-w);
-
+letter-spacing: 0.06em;
 }
 
 .bgcolor-hero{
@@ -203,26 +360,39 @@ color: var(--main-text-color-w);
 
 
 .modal-btn {
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: var(--main-font) sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--main-text-color-w);
-    border: 0;
+
+font-family: var(--main-font) sans-serif;;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+cursor: pointer;
+
+color: var(--main-text-color-w);
+background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+
+padding: 10px 32px 10px 32px;
+margin-right: auto;
+margin-bottom: 83px;
+margin-left: auto;
     
-
- 
 }
 
-.madal-btn:hover,
-.modal-btn:focus {
-background: var(--hover-btn-color);
+
+.btnhover:hover,
+.btnhover:focus{
+
+ background-color:var(--hover-btn-color);
 }
+
 
 /* ========================/hero============================ */
 
@@ -246,20 +416,35 @@ background: var(--hover-btn-color);
     
     color: var(--main-text-color);
 }
-
+.table{
+margin-right: 30px;
+}
+.table:last-child{
+    margin: 0;
+}
 /* ===========================/section2================ */
 
 /* ===========================section3================ */
 .table-of-contents-h2 {
+margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--main-text-color-b);
+    
 }
 
+.img-s3 {
+    margin-right: 30px;
+
+}
+
+.img-s3:last-child {
+    margin: 0;
+}
 /* ===========================/section3================ */
 
 
@@ -267,16 +452,22 @@ background: var(--hover-btn-color);
 
 
 .paragraph-s4{
+margin-top: 13px;
+margin-bottom: 30px;
+
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    
-
 }
+
 .paragraph-colors{
     color: var(--main-text-color);
 }
 .table-h3{
+margin-top: 30px;
+
+    text-align: center;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -284,9 +475,41 @@ background: var(--hover-btn-color);
     line-height: 1.18;
     color: var(--main-text-color-b);
 }
+
+ .img-s4:last-child {
+    margin: 0;
+}
+
+.img-s4{
+    margin-right: 30px;
+} 
+.foto{
+
+}
+.parent-foto{
+
+}
+.card {
+    max-width: 320px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding-bottom: 70px; */
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+    background-color: var(--main-text-color-w);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 /* =====================/section4============ */
 /* =======================footer==================== */
 .adress-footer{
+    margin-right: 900px;
+    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -295,6 +518,7 @@ background: var(--hover-btn-color);
     letter-spacing: 0.03em;
     
     color: var(--main-text-color-w);
+
 }
 .footer-bg{
     background-color: var(--backgraund-color-grey);
@@ -304,6 +528,9 @@ background: var(--hover-btn-color);
     color: var(--main-text-color-w);
 }
 .mail-link-footer {
+    margin-right: 1030px;
+    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -319,6 +546,7 @@ background: var(--hover-btn-color);
 }
 
 .contact-number-footer {
+    margin-right: 1030px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -330,14 +558,13 @@ background: var(--hover-btn-color);
 .contact-number-footer:hover,
 .contact-number-footer:focus {
     color: var(--accent-color);
+    
 }
 /* =======================/footer==================== */
 
 /* ===========inlyne обводка для читабельности margin============== */
-.header-outline{ 
-    outline: 2px solid tomato
 
-}
+
 
 /* ===========inlyne обводка для читабельности margin============== */
 /* ================ или можно  background color  ================= */
