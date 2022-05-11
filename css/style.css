@@ -36,6 +36,8 @@ box-sizing: inherit;
 .hero{
     text-align: center;
     /* height: 600px; */
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 
@@ -60,8 +62,10 @@ margin: 0%
 
     }
     .card-border {
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        padding-left: 24px;
         /* border-top: 1px solid #ECECEC; */
 
         border-right: 1px solid #ECECEC;
@@ -73,7 +77,7 @@ margin: 0%
 .card-border > h3,
 .card-border > p{
     text-decoration: none;
-    text-indent: 24px;
+    
     text-align: left;
 }
 
@@ -83,8 +87,8 @@ margin: 0%
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -20px;
-  margin-left: -20px;
+  margin-top: -30px;
+  margin-left: -30px;
   
 
     }
@@ -92,9 +96,9 @@ margin: 0%
 
 .card-set > .item{
 
-flex-basis: calc(100% / 3 - 20px);
-margin-left: 20px;
-margin-top: 20px;
+flex-basis: calc(100% / 3 - 30px);
+margin-left: 30px;
+margin-top: 30px;
 border: 2px;
 
 
@@ -105,14 +109,19 @@ border: 2px;
         max-width: 100%;
         height: auto;
     }
+
+    .section{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
  
     .container {
     width: 1200px;
     
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    /* padding-top: 94px; */
+
 
     margin-left: auto;
     margin-right: auto;
@@ -120,15 +129,15 @@ border: 2px;
 .header-container{
     display: flex;
     align-items: center ;
-    width: 1200px;
+    /* width: 1200px; */
 
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 0;
-    padding-bottom: 0;
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    /* padding-top: 0; */
+    /* padding-bottom: 0; */
 
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 
 }
 .navigation {
@@ -151,20 +160,7 @@ border: 2px;
     margin: -1px;
 }
 
-.button{
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    list-style: none;
-    padding: 0;
-    justify-content: center;
-    }
-.btn-secondary{
-    margin-bottom: 50px;
-    margin-right: 10px;
-}
+
 .bg-color{
     background-color: var(--section-bg);
 }
@@ -178,8 +174,8 @@ border: 2px;
 }
 .list-portfolio {
     display: flex;
-    align-items:flex-start;
-    margin-left: auto;
+    
+    
     list-style: none;
     padding: 0;
 }
@@ -213,20 +209,7 @@ border: 2px;
     color: var(--main-text-color-b);
 }
 
-.logo-footer {
-    margin-right: 1025px;
-    margin-bottom: 20px;
-   
-    font-family: var(--sekondary-font), sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--primary-text-color);
 
-    letter-spacing: 0.03em;
-
-    color: var(--main-text-color-b);
-}
 .main-header{
 
     border-bottom: 1px solid #ECECEC;
@@ -237,9 +220,6 @@ border: 2px;
 color: var(--accent-color);
 }
 
-.contact{
-    
-}
 .menu{
     
 }
@@ -248,13 +228,13 @@ color: var(--accent-color);
     margin: 0;
 }
 .menu-item {
-    margin-right: 52px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-right: 50px;
+    /* padding-top: 32px; */
+    /* padding-bottom: 32px; */
 }
 
 .link {
-    display: block;
+    /* display: block; */
     text-decoration: none;
 }
 
@@ -264,6 +244,8 @@ color: var(--accent-color);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
   
     color: var(--main-text-color-b);
 }
@@ -289,9 +271,8 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 .contact{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-right: 52px;
+
+    margin-right: 50px;
    
 }
 
@@ -314,9 +295,9 @@ color: var(--accent-color);
 
 /* ========================hero====================== */
 .table-h1{
-
+max-width: 700px;
     margin-right: auto;
-    margin-bottom: 73px;
+    margin-bottom: 50px;
     margin-left: auto;
     
     text-transform: uppercase;
@@ -337,6 +318,10 @@ background-color:var(--accent-color);
 color: var(--main-text-color-w);
 }
  .btn-primary{
+     padding-top: 4px;
+     padding-right: 24px;
+     padding-bottom: 4px;
+     padding-left: 24px;
     background: var(--section-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -354,6 +339,25 @@ color: var(--main-text-color-w);
     /* ------- сделать кнопку прозрачной--------------- */
     /* /---------- ще е властивість для прозорості OPACITY---------/ */
 
+}
+.btn-secondary {
+
+    margin-right: 8px;
+    
+}
+.btn-secondary:last-child{
+    margin-right: 0;
+}
+.button {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
 }
 
 
@@ -381,7 +385,7 @@ border: 0;
 
 padding: 10px 32px 10px 32px;
 margin-right: auto;
-margin-bottom: 83px;
+/* margin-bottom: 83px; */
 margin-left: auto;
     
 }
@@ -398,6 +402,7 @@ margin-left: auto;
 
 /* ===========================section2=================== */
 .table-of-contents{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -417,7 +422,8 @@ margin-left: auto;
     color: var(--main-text-color);
 }
 .table{
-margin-right: 30px;
+    width: 270px;
+    margin-right: 30px;
 }
 .table:last-child{
     margin: 0;
@@ -426,7 +432,7 @@ margin-right: 30px;
 
 /* ===========================section3================ */
 .table-of-contents-h2 {
-margin-bottom: 50px;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -437,7 +443,9 @@ margin-bottom: 50px;
     
 }
 
+
 .img-s3 {
+
     margin-right: 30px;
 
 }
@@ -450,29 +458,38 @@ margin-bottom: 50px;
 
 /* =====================section4============ */
 
+.pudding-for-texts4{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+
+}
 
 .paragraph-s4{
-margin-top: 13px;
-margin-bottom: 30px;
+
 
     text-align: center;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.19;
 }
 
 .paragraph-colors{
     color: var(--main-text-color);
 }
 .table-h3{
-margin-top: 30px;
 
+ margin-bottom: 4px;
     text-align: center;
     font-family: var(--main-font);
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
     color: var(--main-text-color-b);
 }
 
@@ -507,8 +524,7 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 /* =====================/section4============ */
 /* =======================footer==================== */
 .adress-footer{
-    margin-right: 900px;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 
     font-style: normal;
     font-weight: 400;
@@ -520,16 +536,35 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     color: var(--main-text-color-w);
 
 }
-.footer-bg{
+.adress-footer-marg{
+    margin-bottom: 10px;
+}
+.footer{
     background-color: var(--backgraund-color-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-footer {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    font-family: var(--sekondary-font), sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-text-color-b);
 }
 
 .logo-footer-color{
     color: var(--main-text-color-w);
 }
 .mail-link-footer {
-    margin-right: 1030px;
-    margin-bottom: 9px;
+    display: inline-block;
 
     font-style: normal;
     font-weight: 500;
@@ -546,7 +581,6 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 
 .contact-number-footer {
-    margin-right: 1030px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
