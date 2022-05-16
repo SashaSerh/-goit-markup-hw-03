@@ -38,7 +38,6 @@ box-sizing: inherit;
 
 .hero{
     text-align: center;
-    width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -294,7 +293,7 @@ color: var(--accent-color);
 
 
 .contact-icon{
-    width: 16px;
+    /* width: 16px; */
     height: 16px;
     fill:  #757575;
     margin-right: 10px;
@@ -318,12 +317,12 @@ letter-spacing: 0.06em;
 }
 
 .bgcolor-hero{
-    background-image:  url(../img/hero-bg.jpg), linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)); 
-/* linear-gradient(to bottom, rgba (47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), */
+    background-image:linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/hero-bg.jpg); 
+
     background-color: var(--backgraund-color-grey);
     background-repeat: no-repeat;
 
-    background-size: contain;
+    background-size:cover;
     
 }
 .btn-primary:hover,
@@ -647,14 +646,15 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 
 
 .address{
-    
+    margin-right: 75px;
 }
 
 
 /*-------------------- social iconns---------- */
 .socials-footer{
-    display: inline;
-    padding-bottom: 25px;
+    display: flex;
+    padding: 0;
+    
 }
 
 .socials-link-footer{
@@ -670,7 +670,10 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 }
 /* --------------------social icons------------- */
 .join{
-    margin-bottom: 20px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -682,10 +685,10 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         color: var(--main-text-color-w)
 }
 .socials-box{
-display: flex;
-align-items: center;
-justify-content: center;
-padding-left: 30px;
+/* display: flex; */
+/* align-items: center; */
+/* justify-content: center; */
+/* padding-left: 30px; */
 
 
 }
